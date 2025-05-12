@@ -32,11 +32,3 @@ npm run dev
 # 構建生產版本
 npm run build
 ```
-
-## 部署
-
-本專案使用 GitHub Pages 進行部署。訪問 [https://[your-username].github.io/vue-map](https://[your-username].github.io/vue-map) 查看線上版本。
-
-## 授權
-
-MIT License

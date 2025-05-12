@@ -49,9 +49,7 @@ const searchQuery = ref('')
 // 搜索結果
 const searchResults = computed(() => {
   if (!searchQuery.value) return []
-  console.log(searchQuery.value)
   const query = searchQuery.value.toLowerCase()
-  console.log(props.stations)
   return props.stations.filter(station => 
     station.sna.toLowerCase().includes(query) ||
     station.ar.toLowerCase().includes(query) ||
@@ -75,7 +73,7 @@ const handleStationSelect = (station: YouBikeStation) => {
 .search-container {
   position: absolute;
   top: 20px;
-  right: 10%;
+  right: 15%;
   z-index: 1000;
   width: 300px;
 }
